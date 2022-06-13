@@ -4,6 +4,7 @@
 (setq cassandra-pass "cassandra")
 (require 'evil)
 
+;;;###autoload
 (defun cqlsh-query (command &optional output-buffer error-buffer)
   (interactive
    (list
@@ -25,6 +26,7 @@
   (evil-force-normal-state))
 
 
+;;;###autoload
 (defun cqlsh-query-keyspaces (output-buffer error-buffer)
   (interactive
    (list
@@ -37,6 +39,7 @@
 
 ;;SELECT * FROM system_schema.keyspaces;
 
+;;;###autoload
 (defun cqlsh-query-region (output-buffer error-buffer)
   (interactive
    (list
@@ -50,4 +53,4 @@
   (toggle-truncate-lines)
   (evil-force-normal-state))
 
-(provide 'cqlsh-query-md)
+(provide 'emacs-cqlsh)
