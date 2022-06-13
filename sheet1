@@ -1,0 +1,7 @@
+(setq url "localhost")
+(setq port "9042")
+(setq cassandra-name "cassandra")
+(setq cassandra-pass "cassandra")
+
+SELECT * FROM system_schema.keyspaces;
+SELECT * FROM system_schema.tables;
